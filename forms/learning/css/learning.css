@@ -1,0 +1,104 @@
+.jumbo-tondini h1 {
+
+    color: #1d394f;
+}
+
+.jumbo-tondini p {
+
+    color: #30b1ea;
+}
+
+.painel-div1 {
+
+    border-color: #222d6b !important;
+}
+
+.painel-div2 {
+
+    background-color: #222d6b !important;
+    border-color: #222d6b !important;
+}
+
+.nav-close {
+
+    display: none !important;
+}
+
+.button-card {
+
+    background-color: white !important;
+    color: #222d6b !important;
+    border-color: #222d6b !important;
+    font-weight: bold !important;
+}
+
+.button-nav {
+    color: white !important;
+    background-color: #222d6b !important; 
+}
+
+.previous-button {
+
+    background-color: #222d6b;
+    color: white !important;
+    border-color: #222d6b;
+    border-radius: 30px;
+    padding: 4px;
+    padding-left: 4px;
+    padding-right: 4px;
+    float: left;
+}
+
+.next-button {
+
+    background-color: #222d6b;
+    color: white !important;
+    border-color: #222d6b;
+    border-radius: 30px;
+    padding: 4px;
+    padding-left: 4px;
+    padding-right: 4px;
+    float: right;
+}
+
+.previous-button :hover {
+
+    background-color: #19214b;
+    color: white !important;
+    border-color: #19214b;
+    border-radius: 30px;
+    padding: 4px;
+    padding-left: 4px;
+    padding-right: 4px;
+    float: left;
+}
+
+.modal-orion {
+
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    position: fixed;
+    z-index: 2;
+    bottom: 85%;
+    right: 70%;
+}
+
+.fundo-modal {
+
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.289);
+}
+
+.button-icon {
+    background-color: transparent;
+    border-color: transparent;
+}

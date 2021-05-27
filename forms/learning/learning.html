@@ -1,0 +1,337 @@
+        <!DOCTYPE html>
+        <html>
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="stylesheet" href="/style-guide/css/fluig-style-guide.min.css"/>
+            <script src="/portal/resources/js/jquery/jquery.js"></script>
+            <script src="/portal/resources/js/jquery/jquery-ui.min.js"></script>
+            <script src="/portal/resources/js/mustache/mustache-min.js"></script>
+            <script src="/style-guide/js/fluig-style-guide.min.js"></script>
+
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+                <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+                <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+                <!--Meu CSS -->
+                <link href="css/learning.css" rel="stylesheet">
+
+            </head>
+                <script type="text/javascript" src="/webdesk/vcXMLRPC.js"></script>
+        <body>
+
+            <div class="fluig-style-guide" style="width: 98%;">
+                <form name="form" role="form">
+
+                    <!-- Nav tabs -->
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li class="nav-item">
+                        <a id="treinamentos_tabs" class="nav-link nav-title nav-close active" data-toggle="tab" href="#treinamentos_nav">Central de Treinamentos</a>
+                        </li>
+                        <li class="nav-item">
+                        <a id="treinamento_1_tabs" class="nav-link nav-title nav-close" data-toggle="tab" href="#treinamento_1_nav">Treinamento 1</a>
+                        </li>
+                        <li class="nav-item">
+                        <a id="treinamento_2_tabs" class="nav-link nav-title nav-close" data-toggle="tab" href="#treinamento_2_nav">Treinamento 2</a>
+                        </li>
+                        <li class="nav-item">
+                        <a id="treinamento_3_tabs" class="nav-link nav-title nav-close" data-toggle="tab" href="#treinamento_3_nav">Treinamento 3</a>
+                        </li>
+                    </ul>
+
+                    <div class="tab-content">
+
+                        <!--Navegação (Central de Treinamentos)-->
+                        <div id="treinamentos_nav" class="container tab-pane active" aria-selected="false">
+
+                        
+                            <div class="container">
+                            <img style="width: 98%;" src="https://github.com/Emanuel-developer992/imagens/blob/main/banner-tondini-learn.png?raw=true">
+                            </div>
+
+                            <div class="clearfix"></div>
+                            <br>
+                            <br>
+                            
+                            <!-- 1 Card-->
+                            <div class="card card-item col-md-4" style="margin-left: 8%; margin-bottom: 5%; padding: 0px;">
+                                <div class="card-body">
+                                    <div class="card-icon">
+                                        <img style="width: 25%;" src="https://github.com/Emanuel-developer992/imagens/blob/main/fluig-learning.png?raw=true">  
+                                    </div>
+                                    <div class="card-info">
+                                        <h2>Treinamento 1</h2>
+                                        <small>Treinamento de capacitação relacionada à tarefa atual do empregado.</small>
+                                    </div>
+                                </div>
+                                <div class="card-footer" style="background-color: #222d6b;">
+                                <button type="button" onclick="t1();" class="btn button-card">Começar Agora!</button>
+                                </div>
+                            </div>
+
+                            <!-- 2 Card-->
+                            <div class="card card-item col-md-4" style="margin-left: 8%; margin-bottom: 5%; padding: 0px;">
+                                <div class="card-body">
+                                    <div class="card-icon">
+                                        <img style="width: 25%;" src="https://github.com/Emanuel-developer992/imagens/blob/main/fluig-learning.png?raw=true">  
+                                    </div>
+                                    <div class="card-info">
+                                        <h2>Treinamento 2</h2>
+                                        <small>Treinamento de capacitação relacionada à tarefa atual do empregado.</small>
+                                    </div>
+                                </div>
+                                <div class="card-footer" style="background-color: #222d6b;">
+                                <button type="button" data-toggle="modal" data-target="#windows_2" class="btn button-card">Começar Agora!</button>
+                                </div>
+                            </div>
+
+                            <!-- 3 Card-->
+                            <div class="card card-item col-md-4" style="margin-left: 8%; margin-bottom: 5%; padding: 0px;">
+                                <div class="card-body">
+                                    <div class="card-icon">
+                                        <img style="width: 25%;" src="https://github.com/Emanuel-developer992/imagens/blob/main/fluig-learning.png?raw=true">  
+                                    </div>
+                                    <div class="card-info">
+                                        <h2>Treinamento 3</h2>
+                                        <small>Treinamento de capacitação relacionada à tarefa atual do empregado.</small>
+                                    </div>
+                                </div>
+                                <div class="card-footer" style="background-color: #222d6b;">
+                                <button type="button" data-toggle="modal" data-target="#windows_3" class="btn button-card">Começar Agora!</button>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!--Navegação 1 (Treinamento 1)-->
+                        <div id="treinamento_1_nav" class="container tab-pane" aria-selected="false">
+
+                            <img style="width: 98%;" src="https://github.com/Emanuel-developer992/imagens/blob/main/banner-tondini-learn1.png?raw=true">
+
+                            <div class="clearfix"></div>
+                            <br>
+                            <br>
+                            
+                            <div style="width: 90%; margin-left: 2%;">
+                                <h1 style="color: #222d6b;">Treinamento 1</h1>
+                                <p>Antes de iniciar o treinamento registre seus dados pessoais para validação, iremos retornar sua evidência pelo contato fornecido.</p>
+
+                                <!-- 1° Input -->
+                                <div class="form-group col-md-4">
+                                    <label for="t1_nome">Seu Nome</label>
+                                    <input name="t1_nome" type="text" class="form-control" id="t1_nome" placeholder="Preencha com seu nome..."> 
+                                </div>
+
+                                <!-- 2° Input -->
+                                <div class="form-group col-md-4">
+                                    <label for="t1_dataNasc">Data de Nascimento</label>
+                                    <input name="t1_dataNasc" type="text" class="form-control" id="t1_dataNasc" placeholder="Data de Nascimento..."> 
+                                </div>
+
+                                <!-- 3° Input -->
+                                <div class="form-group col-md-4">
+                                    <label for="t1_setor">Seu Setor</label>
+                                    <input name="t1_setor" type="text" class="form-control" id="t1_setor" placeholder="Preencha com seu setor..."> 
+                                </div>
+
+                                <!-- 4° Input -->
+                                <div class="form-group col-md-4">
+                                    <label for="t1_cargo">Seu Cargo</label>
+                                    <input name="t1_cargo" type="text" class="form-control" id="t1_cargo" placeholder="Preencha com seu cargo..."> 
+                                </div>
+
+                                <!-- 5° Input -->
+                                <div class="form-group col-md-4">
+                                    <label for="t1_email">Seu E-mail</label>
+                                    <input name="t1_email" type="text" class="form-control" id="t1_email" placeholder="Preencha com seu e-mail..."> 
+                                </div>
+
+                                <!-- 6° Input -->
+                                <div class="form-group col-md-4">
+                                    <label for="t1_contato">Seu Contato</label>
+                                    <input name="t1_contato" type="text" class="form-control" id="t1_contato" placeholder="Telefone ou celular"> 
+                                </div>
+                                
+                                <div class="clearfix"></div>
+                                <br>
+
+                                <div id="quest" class="nav-close">
+                                    
+                                    <hr>
+                                    <h1 style="color: #222d6b;"> Questionário de Absorção</h1>
+
+                                    <!-- Quest 1 -->
+                                    <div class="panel panel-info" style="border-color: #222d6b;">
+                                        <div class="panel-heading" style="background-color: #222d6b; border-color: #222d6b;">
+                                            <h3 class="panel-title">1ª Questão</h3>
+                                        </div>
+                                        <div class="panel-body">
+                                        
+                                            <p><b>1. </b>Em 1975, cientistas do Instituto de Ciências Planetárias de Tucson e do Instituto Harvard-Smithsonian de Astrofísica lançaram a hipótese do grande impacto (em inglês Giant impact hypothesis ou Big Splash). Segundo eles, um corpo do tamanho de Marte, conhecido como Theia, teria colidido com a Terra e formado a Lua. Suponha que, após a colisão de Theia com a Terra, tanto o ano sideral quanto o dia sideral continua com os mesmos valores absolutos, mudando apenas o sentido de rotação da Terra em torno do seu eixo. Nesta situação hipotética, é correto afirmar que, em termos do novo dia solar, o ano sideral é igual a</p>
+
+                                            <br>
+                                            <br>
+
+                                            
+                                            <div class="custom-radio custom-radio-info">
+                                                <input type="radio" name="quest1" value="0" id="radio-1">
+                                                <label for="radio-1">Alternativa 1</label>
+                                            </div>
+                                            
+                                            <div class="custom-radio custom-radio-info">
+                                                <input type="radio" name="quest1" value="1" id="radio-2">
+                                                <label for="radio-2">Alternativa 2</label>
+                                            </div>
+
+                                            <div class="custom-radio custom-radio-info">
+                                                <input type="radio" name="quest1" value="0" id="radio-3">
+                                                <label for="radio-3">Alternativa 3</label>
+                                            </div>
+
+                                            <div class="custom-radio custom-radio-info">
+                                                <input type="radio" name="quest1" value="0" id="radio-4">
+                                                <label for="radio-4">Alternativa 4</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Quest 2 -->
+                                    <div class="panel panel-info" style="border-color: #222d6b;">
+                                        <div class="panel-heading" style="background-color: #222d6b; border-color: #222d6b;">
+                                            <h3 class="panel-title">2ª Questão</h3>
+                                        </div>
+                                        <div class="panel-body">
+                                        
+                                            <p><b>2. </b>Em 1975, cientistas do Instituto de Ciências Planetárias de Tucson e do Instituto Harvard-Smithsonian de Astrofísica lançaram a hipótese do grande impacto (em inglês Giant impact hypothesis ou Big Splash). Segundo eles, um corpo do tamanho de Marte, conhecido como Theia, teria colidido com a Terra e formado a Lua. Suponha que, após a colisão de Theia com a Terra, tanto o ano sideral quanto o dia sideral continua com os mesmos valores absolutos, mudando apenas o sentido de rotação da Terra em torno do seu eixo. Nesta situação hipotética, é correto afirmar que, em termos do novo dia solar, o ano sideral é igual a</p>
+
+                                            <br>
+                                            <br>
+
+                                            
+                                            <div class="custom-radio custom-radio-info">
+                                                <input type="radio" name="quest2" value="0" id="radio-1">
+                                                <label for="radio-1">Alternativa 1</label>
+                                            </div>
+                                            
+                                            <div class="custom-radio custom-radio-info">
+                                                <input type="radio" name="quest2" value="1" id="radio-2">
+                                                <label for="radio-2">Alternativa 2</label>
+                                            </div>
+
+                                            <div class="custom-radio custom-radio-info">
+                                                <input type="radio" name="quest2" value="0" id="radio-3">
+                                                <label for="radio-3">Alternativa 3</label>
+                                            </div>
+
+                                            <div class="custom-radio custom-radio-info">
+                                                <input type="radio" name="quest2" value="0" id="radio-4">
+                                                <label for="radio-4">Alternativa 4</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Quest 3 -->
+                                    <div class="panel panel-info" style="border-color: #222d6b;">
+                                        <div class="panel-heading" style="background-color: #222d6b; border-color: #222d6b;">
+                                            <h3 class="panel-title">3ª Questão</h3>
+                                        </div>
+                                        <div class="panel-body">
+                                        
+                                            <p><b>3. </b>Em 1975, cientistas do Instituto de Ciências Planetárias de Tucson e do Instituto Harvard-Smithsonian de Astrofísica lançaram a hipótese do grande impacto (em inglês Giant impact hypothesis ou Big Splash). Segundo eles, um corpo do tamanho de Marte, conhecido como Theia, teria colidido com a Terra e formado a Lua. Suponha que, após a colisão de Theia com a Terra, tanto o ano sideral quanto o dia sideral continua com os mesmos valores absolutos, mudando apenas o sentido de rotação da Terra em torno do seu eixo. Nesta situação hipotética, é correto afirmar que, em termos do novo dia solar, o ano sideral é igual a</p>
+
+                                            <br>
+                                            <br>
+
+                                            
+                                            <div class="custom-radio custom-radio-info">
+                                                <input type="radio" name="quest3" value="0" id="radio-1">
+                                                <label for="radio-1">Alternativa 1</label>
+                                            </div>
+                                            
+                                            <div class="custom-radio custom-radio-info">
+                                                <input type="radio" name="quest3" value="1" id="radio-2">
+                                                <label for="radio-2">Alternativa 2</label>
+                                            </div>
+
+                                            <div class="custom-radio custom-radio-info">
+                                                <input type="radio" name="quest3" value="0" id="radio-3">
+                                                <label for="radio-3">Alternativa 3</label>
+                                            </div>
+
+                                            <div class="custom-radio custom-radio-info">
+                                                <input type="radio" name="quest3" value="0" id="radio-4">
+                                                <label for="radio-4">Alternativa 4</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            
+                                <ul class="pager">
+                                    <li class="previous"><button class="previous-button" id="p1" onclick="previous_1();">← Alterar Curso</button></li>
+                                    <li class="next"><button class="next-button" id="g1" onclick="go_1();">Iniciar</button></li>
+                                </ul>
+
+                                <!-- Janela 1 Treinamento (Treinamento 1) -->
+                                <div class="container"> 
+
+                                    <!-- Modal -->
+                                    <!--<div class="modal fade" id="windows_1" role="dialog">-->
+                                    <div id="modalOrion" class="modal-orion nav-close">
+                                        <div class="fundo-modal">
+                                            <div class="modal-dialog modal-lg">
+                                                <div class="modal-content">
+
+                                                    <div class="modal-header">
+                                                        <button type="button"></button>
+                                                        <h4 class="modal-title">Treinamento - 1</h4>
+                                                        
+                                                    </div>
+
+                                                    <div class="modal-body" style="align-items: center;">
+                                                        <iframe src="https://onedrive.live.com/embed?cid=8904C532EFD9626C&amp;resid=8904C532EFD9626C%214462&amp;authkey=ANVqPT3ipRPPKHQ&amp;em=2&amp;wdAr=1.7777777777777777" width="100%" height="350px"  frameborder="0">Este é um apresentação do <a target="_blank" href="https://office.com">Microsoft Office</a> incorporado, da plataforma <a target="_blank" href="https://office.com/webapps">Office</a>.</iframe>
+
+                                                    </div>
+
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-info" onclick="exit_1(); quest_1();">Realizar Questionário</button>
+                                                        <button type="button" class="btn btn-danger"onclick="exit_1()">Cancelar</button>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--</div>-->
+
+                                </div>
+
+
+                                
+
+                            </div>
+
+                        </div>
+
+                        <!--Navegação 1 (Treinamento 2)-->
+                        <div id="treinamento_2_nav" class="container tab-pane" aria-selected="false">
+                        </div>
+
+                        <!--Navegação 1 (Treinamento 3)-->
+                        <div id="treinamento_3_nav" class="container tab-pane" aria-selected="false">
+                        </div>
+
+                    </div>
+
+                    <!-- myScript-->
+                    <script type="text/javascript" src="js/learning.js"></script>
+
+                </form>
+            </div>
+        </body>
+        </html>
