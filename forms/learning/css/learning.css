@@ -102,3 +102,17 @@
     background-color: transparent;
     border-color: transparent;
 }
+
+.readonly-div {
+
+    pointer-events: none !important;
+
+}
+
+.card-learn {
+
+    margin-left: 6% !important;
+    margin-bottom: 5% !important;
+    padding: 0px !important;
+
+}
