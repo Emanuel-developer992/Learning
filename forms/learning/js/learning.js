@@ -3,16 +3,6 @@ window.onload = function() {
 
 approval();
 
-console.log("--------");
-console.log(getFormMode());
-console.log(getMobile());
-console.log(getWKNumState());
-console.log(getWKUser());
-console.log(getWKNumProces());
-console.log(getWKUserLocale());
-console.log(getWKCardId());
-console.log("--------");
-
 };
 
 //FUNÇÃO DE ACESSO AO TREINAMENTO
@@ -89,7 +79,7 @@ function approval() {
             $("#div_t1_q2").addClass('readonly-div');
             $("#div_t1_q3").addClass('readonly-div');
            
-            //ocutar botão
+            //ocutar botões <-P N->
             $("#t1_pg").addClass('nav-close');
 
             //VALIDAÇÃO DAS RESPOSTAS

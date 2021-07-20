@@ -39,9 +39,6 @@
                         <li class="nav-item">
                         <a id="treinamento_2_tabs" class="nav-link nav-title nav-close" data-toggle="tab" href="#treinamento_2_nav">Treinamento 2</a>
                         </li>
-                        <li class="nav-item">
-                        <a id="treinamento_3_tabs" class="nav-link nav-title nav-close" data-toggle="tab" href="#treinamento_3_nav">Treinamento 3</a>
-                        </li>
                     </ul>
 
                     <div class="tab-content">
@@ -129,7 +126,7 @@
                         <!--Navegação 1 (Treinamento 1)-->
                         <div id="treinamento_1_nav" class="container tab-pane" aria-selected="false">
 
-                            <img style="width: 98%;" src="https://github.com/Emanuel-developer992/imagens/blob/main/Tondini/banner-tondini-learn1.png?raw=true">
+                            <img style="width: 93%;" src="https://github.com/Emanuel-developer992/imagens/blob/main/Tondini/banner-tondini-learn1.png?raw=true">
 
                             <div class="clearfix"></div>
                             <br>
@@ -148,7 +145,7 @@
                                 <!-- 2° Input -->
                                 <div class="form-group col-md-4">
                                     <label for="t1_dataNasc">Data de Nascimento</label>
-                                    <input name="t1_dataNasc" type="text" class="form-control" id="t1_dataNasc" placeholder="Data de Nascimento..."> 
+                                    <input name="t1_dataNasc" type="date" class="form-control" id="t1_dataNasc" placeholder="Data de Nascimento..."> 
                                 </div>
 
                                 <!-- 3° Input -->
@@ -172,7 +169,7 @@
                                 <!-- 6° Input -->
                                 <div class="form-group col-md-4">
                                     <label for="t1_contato">Seu Contato</label>
-                                    <input name="t1_contato" type="text" class="form-control" id="t1_contato" placeholder="Telefone ou celular"> 
+                                    <input name="t1_contato" type="text" class="form-control" id="t1_contato" placeholder="Telefone ou celular" mask="(99) 99999-9999"> 
                                 </div>
                                 
                                 <div class="clearfix"></div>
@@ -305,10 +302,16 @@
                                     
                                 </div>
                             
-                                <ul id="t1_pg" class="pager">
-                                    <li class="previous"><button class="previous-button" id="p1" onclick="previous_1();">← Alterar Curso</button></li>
-                                    <li class="next"><button class="next-button" id="g1" onclick="go_1();">Iniciar</button></li>
-                                </ul>
+                                <div id="t1_pg" class="col-md-12">
+                                    <div>    
+                                        <button class="btn btn-success button-previous" id="p1" onclick="previous_1();">← Alterar Curso</button>
+                                    </div>
+
+                                    <div>
+                                        <button class="btn btn-success button-next" id="g1" onclick="go_1();">Iniciar</button>
+                                    </div>
+
+                                </div>
 
                                 <!-- Janela 1 Treinamento (Treinamento 1) -->
                                 <div class="container"> 
@@ -332,7 +335,7 @@
                                                     </div>
 
                                                     <div class="modal-footer">
-                                                        <button type="button" class="btn btn-info" onclick="exit_1(); quest_t1();">Realizar Questionário</button>
+                                                        <button type="button" class="btn btn-info button-tondini" onclick="exit_1(); quest_t1();">Realizar Questionário</button>
                                                         <button type="button" class="btn btn-danger"onclick="exit_1()">Cancelar</button>
                                                     </div>
 
@@ -353,10 +356,6 @@
 
                         <!--Navegação 1 (Treinamento 2)-->
                         <div id="treinamento_2_nav" class="container tab-pane" aria-selected="false">
-                        </div>
-
-                        <!--Navegação 1 (Treinamento 3)-->
-                        <div id="treinamento_3_nav" class="container tab-pane" aria-selected="false">
                         </div>
 
                     </div>

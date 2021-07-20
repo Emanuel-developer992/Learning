@@ -116,3 +116,25 @@
     padding: 0px !important;
 
 }
+
+.button-next {
+
+    float: right !important;
+    background-color: #222d6b !important;
+    color: white !important;
+
+}
+
+.button-previous {
+
+    float: left !important;
+    background-color: #222d6b !important;
+    color: white !important;
+
+}
+
+.button-tondini {
+
+    background-color: #222d6b !important;
+    color: white !important;
+}
